@@ -20,3 +20,10 @@ $$\Delta\mathbf{W}_j=\pm2\eta\mathbf{X}$$
 
 感知器学习规则**只适用于二进制神经元，初始权值可取任意值**。
 感知器学习规则代表一种有导师学习。由于感知器理论是研究其他神经网络的基础，该规则对于神经网络的有导师学习具有极为重要的意义。
+
+<br>
+<div align ="center">
+<img src = "single_layer.png" alt="分类结果" title="分类结果">
+</div>
+<p align = "center"><b>分类结果</b></p>
+<br>
