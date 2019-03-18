@@ -9,10 +9,10 @@ $$ r=d_j-o_j$$
 
 式中，$d_j$为期望的输出，实际的输出为$o_j=f(\mathbf{W}_j^T\mathbf{X})$ 。感知器采用了符号函数作为转移（激活）函数，其表达为：
 $$
-f( \mathbf{W}_j^T\mathbf{X} ) = {\mathop{\rm sgn}} (\mathbf{W}_j^T\mathbf{X}  )\;\;\left\{ {\begin{array}{*{20}{c}}
+f( \mathbf{W}_j^T\mathbf{X} ) = {\mathop{\rm sgn}} (\mathbf{W}_j^T\mathbf{X}  )\;\; \{ {\begin{array}{*{20}{c}}
 {1,\;\;\;\mathbf{W}_j^T\mathbf{X} \ge 0}\\
 { - 1,\;\;\mathbf{W}_j^T\mathbf{X}<0}
-\end{array}} \right.
+\end{array}} .
 $$
 因此，权值调整公式应为：
 $$\Delta\mathbf{W}_j=\eta[d_j-sgn(\mathbf{W}_j^T\mathbf{X})] \mathbf{X}$$
