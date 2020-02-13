@@ -5,19 +5,19 @@
 ---
 
 具有单层计算单元的神经网络系统，称为$Single Layer Perceptron$（单层感知器）。感知器的学习规则规定：**学习信号**等于**神经元期望输出**与**实际输出**之差。
-$$ r=d_j-o_j\tag{1}$$
+$$ r = d _j - o _j\tag{1}$$
 
-式$(1)$中，$d_j$为期望的输出，实际的输出为$o_j=f(\mathbf{W}_j^T\mathbf{X})$ 。感知器采用了符号函数作为转移（激活）函数，其表达为：
+式$(1)$中，$d_j$为期望的输出，实际的输出为$o _j=f(\mathbf{W} _j^T\mathbf{X})$ 。感知器采用了符号函数作为转移（激活）函数，其表达为：
+
+$$
 \begin{equation}
-d{\mathbf{F}}_{{\rm {ECS}},j}^k\left( {{z_k},t} \right) = \sum\limits_{n = 0}^{{N_{tr}}} {\left[ {{a_{nq}}\cos (n\omega t) + {b_{nq}}\sin (n\omega t)} \right]} 
+f\left( {{\mathbf{W}}_j^T{\mathbf{X}}} \right) = \operatorname{sgn} \left( {{\mathbf{W}}_j^T{\mathbf{X}}} \right) = \left\{ \begin{gathered}
+  \;{\kern 1pt} {\kern 1pt} \;1,\;{\mathbf{W}}_j^T{\mathbf{X}} \geqslant 0 \hfill \\
+   - 1,\;{\mathbf{W}}_j^T{\mathbf{X}} < 0 \hfill \\ 
+\end{gathered}  \right.
 \end{equation}
+$$
 
-$$
-f( \mathbf{W}_j^T\mathbf{X} ) = {\mathop{\rm sgn}} (\mathbf{W}_j^T\mathbf{X}  )\;\;=\{ {\begin{array}{*{20}{c}}
-{1,\;\;\;\mathbf{W}_j^T\mathbf{X} \ge 0}\\
-{ - 1,\;\;\mathbf{W}_j^T\mathbf{X}<0}
-\end{array}} \}.
-$$
 因此，权值调整公式应为：
 $$\Delta\mathbf{W}_j=\eta[d_j-sgn(\mathbf{W}_j^T\mathbf{X})] \mathbf{X}$$
 式中$\Delta\mathbf{W}_j$为权值向量的调整量，$\eta$为学习速率。
