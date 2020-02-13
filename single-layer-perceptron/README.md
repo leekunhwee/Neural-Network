@@ -4,10 +4,14 @@
 
 ---
 
-具有单层计算单元的神经网络系统，称为Single Layer Perceptron（单层感知器）。感知器的学习规则规定，**学习信号**等于**神经元期望输出**与**实际输出**之差：
-$$ r=d_j-o_j$$
+具有单层计算单元的神经网络系统，称为$Single Layer Perceptron$（单层感知器）。感知器的学习规则规定：**学习信号**等于**神经元期望输出**与**实际输出**之差。
+$$ r=d_j-o_j\tag{1}$$
 
-式中，$d_j$为期望的输出，实际的输出为$o_j=f(\mathbf{W}_j^T\mathbf{X})$ 。感知器采用了符号函数作为转移（激活）函数，其表达为：
+式$(1)$中，$d_j$为期望的输出，实际的输出为$o_j=f(\mathbf{W}_j^T\mathbf{X})$ 。感知器采用了符号函数作为转移（激活）函数，其表达为：
+\begin{equation}
+d{\mathbf{F}}_{{\rm {ECS}},j}^k\left( {{z_k},t} \right) = \sum\limits_{n = 0}^{{N_{tr}}} {\left[ {{a_{nq}}\cos (n\omega t) + {b_{nq}}\sin (n\omega t)} \right]} 
+\end{equation}
+
 $$
 f( \mathbf{W}_j^T\mathbf{X} ) = {\mathop{\rm sgn}} (\mathbf{W}_j^T\mathbf{X}  )\;\;=\{ {\begin{array}{*{20}{c}}
 {1,\;\;\;\mathbf{W}_j^T\mathbf{X} \ge 0}\\
