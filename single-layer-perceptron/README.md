@@ -13,8 +13,8 @@ $$
 \begin{equation}
 f\left( {{\mathbf{W}} _j^T{\mathbf{X}}} \right) = \operatorname{sgn} \left( {{\mathbf{W}}  _j^T{\mathbf{X}}} \right) =
 \begin{cases}
-  \;{\kern 1pt} {\kern 1pt} \;1,\;{\mathbf{W}} _j^T{\mathbf{X}} \ge 0 \\\\
-   -1,\;{\mathbf{W}} _j^T{\mathbf{X}} < 0
+  \ {\kern 1pt} {\kern 1pt} \ 1,\ {\mathbf{W}} _j^T{\mathbf{X}} \ge 0 \\\\
+   -1,\ {\mathbf{W}} _j^T{\mathbf{X}} < 0
 \end{cases}
 \end{equation}
 $$
