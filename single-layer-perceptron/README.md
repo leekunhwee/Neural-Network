@@ -12,8 +12,8 @@ $$ r = d _j - o _j\tag{1}$$
 $$
 \begin{equation}
 f\left( {{\mathbf{W}}_j^T{\mathbf{X}}} \right) = \operatorname{sgn} \left( {{\mathbf{W}}_j^T{\mathbf{X}}} \right) = \left\{ \begin{gathered}
-  \;{\kern 1pt} {\kern 1pt} \;1,\;{\mathbf{W}}_j^T{\mathbf{X}} \geqslant 0 \hfill \\
-   - 1,\;{\mathbf{W}}_j^T{\mathbf{X}} < 0 \hfill \\ 
+  \;{\kern 1pt} {\kern 1pt} \;1,\;{\mathbf{W}}_j^T{\mathbf{X}} \geqslant 0 \\\\
+   - 1,\;{\mathbf{W}}_j^T{\mathbf{X}} < 0
 \end{gathered}  \right.
 \end{equation}
 $$
