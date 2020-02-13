@@ -16,7 +16,7 @@ f\left( {{\mathbf{W}} _j^T{\mathbf{X}}} \right) = \operatorname{sgn} \left( {{\m
   \ {\kern 1pt} {\kern 1pt} \ 1,\ {\mathbf{W}} _j^T{\mathbf{X}} \ge 0 \\\\
    -1,\ {\mathbf{W}} _j^T{\mathbf{X}} < 0
 \end{cases}
-\end{equation}
+\end{equation} \tag{2}
 $$
 
 因此，权值调整公式应为：
